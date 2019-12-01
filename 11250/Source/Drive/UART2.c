@@ -85,17 +85,9 @@ void Initial_UART2(unsigned long baudrate)
 
 void USART2_IRQHandler(void)
 {	
-	int begintime,endtime;
 	int i = 0;
 	int a[1002];
-//		begintime=clock();	//计时开始		
-	bool test = USART_GetITStatus(USART2, USART_IT_RXNE);
-
-//	begintime=clock();	//计时开始
-//	printf("test is%d\r\n",test);
-//	endtime = clock();	//计时结束
-//	printf("\n\nRunning Time：%dms\n", endtime-begintime);
-
+//	bool test = USART_GetITStatus(USART2, USART_IT_RXNE);
 //	printf("test is%d\r\n",test);
 //	while(1)
 //     {

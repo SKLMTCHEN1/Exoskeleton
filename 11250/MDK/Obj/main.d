@@ -41,10 +41,10 @@
 .\obj\main.o: ..\Source\STM32F10xLib\M3\stm32f4xx_fsmc.h
 .\obj\main.o: ..\Source\Drive\sys.h
 .\obj\main.o: ..\Source\Drive\UART2.h
+.\obj\main.o: ..\Source\Drive\usart3.h
 .\obj\main.o: ..\Source\Drive\delay.h
 .\obj\main.o: ..\Source\Drive\JY901.h
 .\obj\main.o: ..\Source\Drive\DIO.h
 .\obj\main.o: ..\Source\Drive\lcd.h
 .\obj\main.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
 .\obj\main.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
-.\obj\main.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\time.h

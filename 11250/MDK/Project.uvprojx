@@ -422,6 +422,11 @@
               <FileType>1</FileType>
               <FilePath>..\Source\Drive\usart.c</FilePath>
             </File>
+            <File>
+              <FileName>usart3.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Source\Drive\usart3.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
