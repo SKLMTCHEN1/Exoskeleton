@@ -162,7 +162,7 @@ int main(void)
 	uart_init(115200);
 	uart2_init(115200);//接JY-901模块的串口	
 	uart3_init(115200);
-	LCD_Init();
+//	LCD_Init();
 	LED_Init();					//初始化LED 
 //	 KEY_Init();					//按键初始化 
 	Adc_Init(); 				//初始化ADC
@@ -407,7 +407,7 @@ int out_length=7;
 //		printf("hipAngle_raw:%.3f\r\n",hipAngle_raw);		
 //			delay_ms(10);		
 //		printf("%.3f\r\n",(float)stcAngle.Angle[1]/32768*180);		
-		printf("kneeAngle_raw:%.3f\r\n",hipAngle_raw);		
+//		printf("kneeAngle_raw:%.3f\r\n",hipAngle_raw);		
 //			delay_ms(10);				 
 //		printf("kneeAngleRelative_raw:%.3f\r\n",kneeAngleRelative_raw);	
 				 
@@ -498,7 +498,7 @@ int out_length=7;
 		if (Index==1||Index==2)	
 		{
 			temp_current = 1500;
-			temp_current2 = 2500;			//the other leg is in index=4
+			temp_current2 = -1500;			//the other leg is in index=4  2500
 		}
 		else if (Index==3)
 		{
@@ -515,10 +515,16 @@ int out_length=7;
 			temp_current = -1500;			
 			temp_current2 = -1500;			//the other leg is in index=3			
 		}			
-		else if (Index==6||Index==7)					
+		else if (Index==6||Index==7)	
+		{			
 			temp_current = -2500;						
 			temp_current2 = 2500;			//the other leg is in index=4					
-				
+		}			
+		else if (Index==0)
+		{
+			temp_current = 1000;						
+			temp_current2 = 1000;			//Double support phase
+		}
 			
 //				if (Index==1||Index==2)	
 //		{
